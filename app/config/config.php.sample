@@ -13,3 +13,6 @@
 
 	// Sirte Name
 	define('SITENAME', '_YOUR_SITENAME_');
+
+	//App Version
+	define('APPVERSION', '1.0.0');
