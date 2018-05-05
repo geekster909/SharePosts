@@ -44,16 +44,16 @@
 			if(is_null($type)) {
 				switch (true) {
 					case is_int($value):
-						$type = PDO::PARAM__INT;
+						$type = PDO::PARAM_INT;
 						break;
 					case is_bool($value):
-						$type = PDO::PARAM__BOOL;
+						$type = PDO::PARAM_BOOL;
 						break;
 					case is_null($value):
-						$type = PDO::PARAM__NULL;
+						$type = PDO::PARAM_NULL;
 						break;
 					default:
-						$type = PDO::PARAM__STR;
+						$type = PDO::PARAM_STR;
 				}
 			}
 
