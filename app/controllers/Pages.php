@@ -14,6 +14,10 @@
 				'title' => 'SharePosts',
 				'description' => 'Simple social network built on the simple MVC PHP Framework',
 			];
+
+			if(isLoggedIn()) {
+				redirect('posts');
+			}
 			
 			$this->view('pages/index', $data);
 		}
